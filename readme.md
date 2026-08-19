@@ -24,6 +24,7 @@ I worked to retrofit a Grade II* listed 500 year-old building using PassiveHaus 
 I led the development of a skin care/analysis product based on Raspberry Pi Compute Module 4. I designed the high-speed PCB with MIPI/DSI interfaces, bespoke liquid management hardware, all in a very tight mechanical fit with the product case. That required precise 3D modelling work in Altium Designer and Solidworks and close collaboration with the MCAD engineer. I also performed required Linux image modifications, and wrote supporting Python and C code.  Linux driver development for a DSLR camera lens over a proprietary high speed digital protocol, in C. 
 
 **Dunnhumby, Manchester, UK** |  *Senior Electronic Engineer* |  *December 2020 – Aug 2021*
+
 I wrote high-performance, containerized, cloud-deployed C code, and supporting Python code, to process customer transaction data at a massive scale. Strong emphasis on best practices – Agile, Jira, code reviews.
 
 **Genedrive Diagnostics (former Epistem), Manchester, UK** |  *Embedded Engineer* |  *June 2018-October 2020*
@@ -49,17 +50,19 @@ I worked on a variety of hi-fidelity audio products: software and PCB design for
 <h1 align="center">Education</h1>
 
 **University College London** |  *Electrical and Electronic Engineering MEng* |  *2008-2012*
+
 - First-class degree for all four years, graduated on Dean’s list. Group leader of 3 projects
-- 3rd year project: DSP audio quality enhancement and active cross-over design 
-- 4th year: non-contact heart-rate measurement utilizing microwave Doppler module 
+- 3rd year project: [DSP audio quality enhancement and active cross-over design](https://github.com/sunrise-designs/3rd_year_project_active_cross_over_dev) 
+- 4th year: [non-contact heart-rate measurement utilizing microwave Doppler module](https://github.com/sunrise-designs/4th_year_project_non_contact_heart_rate_monitoring)
 - Extra projects: quadcopter control system (control system design and implementation); multichannel precision gas sensor controller (PCB and software) 
 
 **Richmond upon Thames College** |  *A levels* |  *2006-2008*
+
 -  A2 Maths (A), Physics (A), Electronics (A) and Russian (A)
 
 <h1 align="center">Current personal research</h1>
 
-I am developing an open-source physical device and analytic software to diagnose sleep issues - known as a sleep study or polysomnography (PSG). It employs a complex data acquisition and signal processing flow from the embedded microcontroller to a responsive web-based UI, utilizing Medical Software-compliant risk segregation. A multitude of sensors, including 2 accelerometers for leg movement tracking and 1 for positional tracking, is used to detect possible causes of sleep disturbances. The motivation is rooted in my own sleep issues, and the goal is to streamline a full diagnostic pathway for sleep disorders, made accessible for anyone in the world.
+I am developing an [open-source physical device and analytic software](https://github.com/sunrise-designs/OpenPolysom) to diagnose sleep issues - known as a sleep study or polysomnography (PSG). It employs a complex data acquisition and signal processing flow from the embedded microcontroller to a responsive web-based UI, utilizing Medical Software-compliant risk segregation. A multitude of sensors, including 2 accelerometers for leg movement tracking and 1 for positional tracking, is used to detect possible causes of sleep disturbances. The motivation is rooted in my own sleep issues, and the goal is to streamline a full diagnostic pathway for sleep disorders, made accessible for anyone in the world.
 
 <h1 align="center">Technical skills</h1>
 
