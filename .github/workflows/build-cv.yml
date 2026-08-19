@@ -1,0 +1,47 @@
+name: Build CV PDF
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Pinned so CI renders byte-for-byte what you get locally. Bump both
+      # deliberately; pandoc's typst writer and typst itself both move fast.
+      PANDOC_VERSION: "3.10"
+      TYPST_VERSION: "v0.15.1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pandoc
+        run: |
+          curl -fsSLo /tmp/pandoc.deb \
+            "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb"
+          sudo dpkg -i /tmp/pandoc.deb
+          pandoc --version | head -1
+
+      - name: Install typst
+        run: |
+          curl -fsSL \
+            "https://github.com/typst/typst/releases/download/${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" \
+            | tar -xJ -C /tmp
+          sudo install /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version
+
+      - name: Build PDF
+        id: build
+        run: bash render/build-cv.sh
+
+      - name: Check readme.md was left pristine
+        run: git diff --exit-code -- readme.md
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.pdf-name }}
+          path: ${{ steps.build.outputs.pdf-path }}
+          if-no-files-found: error

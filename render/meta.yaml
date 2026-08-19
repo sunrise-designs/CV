@@ -1,0 +1,10 @@
+# Styling knobs consumed by pandoc's typst template (`conf`).
+# These must live here rather than in header.typ: conf applies its own
+# `set page` / `set text` / `set par` inside the document, so it would
+# override anything header.typ tried to set for the same properties.
+papersize: a4
+fontsize: 10pt
+linestretch: 1.0
+margin:
+  x: 18mm
+  y: 15mm
