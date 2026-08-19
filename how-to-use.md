@@ -71,6 +71,30 @@ same script on every push to `main`, on PRs, and on demand via the Actions tab.
 The PDF is uploaded as a build artifact named after the file. Both tool
 versions are pinned there so CI renders exactly what you get locally.
 
+### Releases
+
+Pushes to `main` also refresh a release tagged `latest`, whose asset has the
+date stripped off so the link is stable — this is the URL to hand out:
+
+<https://github.com/sunrise-designs/CV/releases/download/latest/Dmitry-Ignatyev-CV.pdf>
+
+Use that tag-explicit form rather than `/releases/latest/download/...`: the
+latter resolves to whatever GitHub *considers* newest, which is a versioned
+release, not this one.
+
+Pushing a `v*` tag additionally cuts a permanent release, keeping the dated
+filename and generating notes from the commits since the previous tag:
+
+```bash
+git tag v2026.08
+git push origin v2026.08
+```
+
+The rolling release is a prerelease, so the versioned ones keep the "Latest
+release" badge. Until the first `v*` tag exists, `/releases/latest` therefore
+404s — only the link above works. Its tag is deleted and recreated on each
+push, because GitHub pins an existing tag to the commit that first created it.
+
 ## Editing
 
 - **Content** — edit `readme.md`. Ordinary markdown; `[text](url)` links work
