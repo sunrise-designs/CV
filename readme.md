@@ -1,5 +1,5 @@
 <h1 align="center">Dmitry Ignatyev</h1>
-I am a passionate engineer who absolutely thrives on combining electronics, software and mechanical design. I combine solid academic background with industry experience, and genuine passion for making. I always aim to bring state-of-the-art solutions to the challenges I work on. 
+I am a passionate engineer who absolutely thrives on fusing together electronics, software and mechanical design. I combine solid academic background with industry experience, and genuine passion for making. I always aim to bring state-of-the-art solutions to the challenges I work on. 
 
 <h1 align="center">Work experience</h1>
 
