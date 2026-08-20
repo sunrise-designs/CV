@@ -16,5 +16,4 @@
 
 # DFM Design for Manufacturing
 1. In general, do not print any layers to all gerber files. Board outline should live in its own file
-2. Do not include information gerber layers (say stackup table) for automated PCB quoting tools (JLCPCB, Eurocircuits) 
-- it tends to confuse their back-end
+2. Do not include information gerber layers (say stackup table) for automated PCB quoting tools (JLCPCB, Eurocircuits) - it tends to confuse their back-end engine
