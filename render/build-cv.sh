@@ -15,6 +15,7 @@ set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."   # repo root; every path below is relative to it
 
 REPO_URL="${REPO_URL:-https://github.com/sunrise-designs/CV}"
+LEARNINGS_URL="${LEARNINGS_URL:-$REPO_URL/blob/main/learnings/readme.md}"
 
 for tool in pandoc typst; do
   command -v "$tool" >/dev/null || { echo "error: $tool not found on PATH" >&2; exit 1; }
@@ -43,7 +44,7 @@ pandoc render/.build/cv.md -o render/.build/cv.typ \
 sed -i 's/ | / #h(1fr) /'         render/.build/cv.typ   # 1st separator: elastic
 sed -i 's/ | / #h(1.5em) /g'      render/.build/cv.typ   # the rest: fixed gap
 sed -i '/#h(1fr)/s|.*|#entry[&]|' render/.build/cv.typ   # spacing, see header.typ
-printf '\n#source-link("%s")\n' "$REPO_URL" >> render/.build/cv.typ
+printf '\n#source-link("%s", "%s")\n' "$REPO_URL" "$LEARNINGS_URL" >> render/.build/cv.typ
 
 typst compile --root render/.build render/.build/cv.typ "$OUT"
 echo "built: $OUT"

@@ -2,6 +2,7 @@
 2. Some hole types 
 
 ![hole-types](img/3d-print-hole-types.png)
+
 3. Add chamfer to the entry of the holes
 4. There are various features that can be added to holes to make them grip better, with constant force independent of tolerances
 5. Chamfer the bottom edge of the parts by approximately 0.5-0.8 mm

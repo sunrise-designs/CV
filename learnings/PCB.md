@@ -4,6 +4,7 @@
 3. Mind the surface finish when pad sizes get small
 4. Decide on correct minimum clearances and track widths _early on_. Even more so for IS or high-current designs
 5. For high-current tracks, it pays to apply the rule for the minimum width in the schematic, instead of relying on memory to set the width manually
+6. For multi-board designs, make it crystal-clear where does each connector go - can't be too clear or explicit
 
 # DFT Design For Test
 
