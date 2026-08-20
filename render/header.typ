@@ -29,11 +29,11 @@
 
 // Repo link, pinned to the bottom of the last page: v(1fr) soaks up whatever
 // vertical space is left in the page flow.
-#let source-link(url, more-url) = {
+#let source-link(url) = {
   v(1fr)
   align(center)[
     #line(length: 30%, stroke: 0.4pt + luma(50%))
     #v(0.6em, weak: true)
-    #text(size: 8.5pt)[#link(more-url)[See more] #h(1.5em) Source and latest version: #link(url)]
+    #text(size: 8.5pt)[Source and latest version: #link(url)]
   ]
 }
