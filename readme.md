@@ -73,3 +73,5 @@ I am developing an [open-source physical device and analytic software](https://g
 - Extensive experience in embedded C, and Object-Oriented Programming in C++ on AVR, PIC and ARM Cortex M3/M4 platforms.
 - Experience of designing DSP algorithms (audio, heart rate and breathing, position tracking, classification and feature extraction) inside real-world control systems in Matlab, C and Python.
 - CAD – proficient in Fusion and Solidworks with complex parts, assemblies, parametric designs and manufacturing drawings. Experience of design for injection moulding and CNC/additive manufacturing. Good knowledge of 3D printing specifics, for both FDM and SLA.
+
+[Read more](https://github.com/sunrise-designs/CV/blob/main/learnings/readme.md)
