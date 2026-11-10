@@ -1,11 +1,11 @@
 <h1 align="center">Dmitry Ignatyev</h1>
-I am a passionate engineer who absolutely thrives on fusing together electronics, software and mechanical design. I combine solid academic background with industry experience, and genuine passion for making. I always aim to bring state-of-the-art solutions to the challenges I work on. 
+I am a passionate engineer who absolutely thrives on fusing together electronics, mechanical design and software. I combine solid academic background with industry experience, and genuine passion for making. I always aim to bring state-of-the-art solutions to the challenges I work on. 
 
 <h1 align="center">Work experience</h1>
 
 **Mutech, Manchester, UK** | *Embedded engineer* | *June 2025 - Present*
 
-Product development  for a complex, Intrinsically Safe (IS) modular floodlight for use in explosive atmospheres. Software design with emphasis on reliability, hardware design with awareness of stringent IS requirements. Custom tooling - 3D jigs, auxiliary signal analysis in Python.
+Product development  for a complex, Intrinsically Safe (IS) modular floodlight for use in explosive atmospheres. Software design with emphasis on reliability, hardware design with awareness of stringent IS requirements. Custom tooling - test jigs, auxiliary signal analysis in Python.
 
 **AD Aerospace, Manchester, UK** | *Hardware engineer* |  *October 2024 - April 2025*
 
@@ -60,18 +60,20 @@ I worked on a variety of hi-fidelity audio products: software and PCB design for
 
 -  A2 Maths (A), Physics (A), Electronics (A) and Russian (A)
 
-<h1 align="center">Current personal research</h1>
+<h1 align="center">Current personal projects</h1>
 
-I am developing an [open-source physical device and analytic software](https://github.com/sunrise-designs/OpenPolysom) to diagnose sleep issues - known as a sleep study or polysomnography (PSG). It employs a complex data acquisition and signal processing flow from the embedded microcontroller to a responsive web-based UI, utilizing Medical Software-compliant risk segregation. A multitude of sensors, including 2 accelerometers for leg movement tracking and 1 for positional tracking, is used to detect possible causes of sleep disturbances. The motivation is rooted in my own sleep issues, and the goal is to streamline a full diagnostic pathway for sleep disorders, made accessible for anyone in the world.
+- I am setting up a metal fabrication workshop, where I have a Myford ML7 lathe, Warco MD-30 mill converted to CNC, manual mill, TIG AC welder and lots more
+
+- I am developing an [open-source physical device and analytic software](https://github.com/sunrise-designs/OpenPolysom) to diagnose sleep issues - known as a sleep study or polysomnography (PSG). It employs a complex data acquisition and signal processing flow from the embedded microcontroller to a responsive web-based UI, utilizing Medical Software-compliant risk segregation.
 
 <h1 align="center">Technical skills</h1>
 
-- Proficient in circuit design and PCB layout in Altium Designer (design rules, advanced polygons, BOM and variant management, Draftsman, Gerber, outjobs, 3D, flexi). Design and layout of mixed signal PCBs with up to 12 layers, and complete transfer to manufacture in the UK and China. Learning Kicad.
-- Proficient with simulation (LTSPICE), including custom symbol creation and parametrized analysis. Experience with low-noise and high-speed design. 
-- Fully competent in all aspects of testing and debugging using high-end oscilloscopes, logic analyzers, thermocouple interfaces, VNAs. Experience of writing custom software to automate testing. Test jig PCB design.
-- Experience of design for EMC compliance, from concept to obtaining EMC certification in the test house. 
+- CAD – proficient in Fusion and Solidworks with complex parts, assemblies, parametric design and manufacturing drawings. Experience of design for injection moulding and CNC/additive manufacturing. Good knowledge of 3D printing specifics, for both FDM and SLA.
+- Proficient in circuit design and PCB layout in Altium Designer - mixed signal PCBs with up to 12 layers, and complete transfer to manufacture in the UK and China. Learning Kicad.
 - Extensive experience in embedded C, and Object-Oriented Programming in C++ on AVR, PIC and ARM Cortex M3/M4 platforms.
+- Fully competent in all aspects of testing and debugging using high-end oscilloscopes, logic analyzers, thermocouple interfaces, VNAs. Experience of writing custom software to automate testing. Test jig PCB design.
+- Proficient with simulation (LTSPICE), including custom symbol creation and parametrized analysis. Experience with low-noise and high-speed design. 
+- Experience of design for EMC compliance, from concept to obtaining EMC certification in the test house. 
 - Experience of designing DSP algorithms (audio, heart rate and breathing, position tracking, classification and feature extraction) inside real-world control systems in Matlab, C and Python.
-- CAD – proficient in Fusion and Solidworks with complex parts, assemblies, parametric designs and manufacturing drawings. Experience of design for injection moulding and CNC/additive manufacturing. Good knowledge of 3D printing specifics, for both FDM and SLA.
 
 [Read more](https://github.com/sunrise-designs/CV/blob/main/learnings/readme.md)

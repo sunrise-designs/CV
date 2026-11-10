@@ -3,4 +3,4 @@
 3. Name all the bodies that are to be exported for printing with sensible, unique names. The default names like "body 1" often repeat (if multiple sub-assemblies are use), leading to replaced output files and confusion
 4. It's much quicker and more repeatable to create "Selection sets" for all bodies which need to be exported for printing in Fusion.
 "PrintBusters" is an excellent free Fusion plug-in to export selected, or all bodies as a batch. This really saves a lot of time https://printbusters.io/fusion-360
-5. The same sketch can be re-used by different features to a great effect - especially utilizing start offsets for extrusions. Better than having multiple sketches
+5. The same sketch can be re-used by different features to a great effect - especially utilizing start offsets for extrusions. Better than having multiple sketches.

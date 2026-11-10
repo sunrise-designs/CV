@@ -1,10 +1,12 @@
 # General
+
 1. Engage with the manufacturer _early_ when deciding on stack-up for impedance controlled board to check their laminate capabilities
 2. Adding more layers is relatively cheap, adding blind and buried vias is _expensive_
 3. Mind the surface finish when pad sizes get small
 4. Decide on correct minimum clearances and track widths _early on_. Even more so for IS or high-current designs
 5. For high-current tracks, it pays to apply the rule for the minimum width in the schematic, instead of relying on memory to set the width manually
 6. For multi-board designs, make it crystal-clear where does each connector go - can't be too clear or explicit
+7. Annual ring requirements can be less for vias than PTH pads (JLCBPCB for example)
 
 # DFT Design For Test
 
@@ -15,5 +17,10 @@
 ![test_p_heights](img/sprung-pins.png)
 
 # DFM Design for Manufacturing
+
 1. In general, do not print any layers to all gerber files. Board outline should live in its own file
 2. Do not include information gerber layers (say stackup table) for automated PCB quoting tools (JLCPCB, Eurocircuits) - it tends to confuse their back-end engine
+3. Mind the width of the solder paste blade
+4. Leave margins at the start and end of solder paste machine travel
+5. Having excessively large solder paste pads results in the freshly laid layer or solder paste peeling away
+6. Mind vias wicking away solder during reflow
